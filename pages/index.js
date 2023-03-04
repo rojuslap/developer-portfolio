@@ -5,6 +5,8 @@ import {
   AiFillGithub,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import Image from "next/image";
+import portrait from "../public/portrait.jpg";
 
 export default function Home() {
   return (
@@ -47,7 +49,9 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillTwitterCircle />
           </div>
-          <div></div>
+          <div className="relative rounded-full w-80 h-80">
+            <Image src={portrait} layout="fill" />
+          </div>
         </section>
       </main>
     </>
