@@ -4,11 +4,7 @@ import {
   AiFillGithub,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import Image from "next/image";
-import portrait from "../public/portrait.jpg";
-import Navbar from "@/components/Navbar";
-import { useState } from "react";
-import darkMode from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,27 +17,29 @@ export default function Home() {
       </Head>
       <main className="px-10 fade-in">
         <section className="">
-          <div className="text-center p-3">
-            <h2 className="text-5xl py-1 dark:text-white">Rojus Lape</h2>
-            <h3 className="text-2xl py-2 dark:text-white">
+          <div className="text-center p-3 mt-24">
+            <h2 className="text-5xl py-1 text-neutral-900 dark:text-white">
+              Hi, my name is Rojus
+            </h2>
+            <p className="text-2xl font-light py-2 text-neutral-900 dark:text-white">
               Software developer
-            </h3>
-            <p className="dark:text-white">
-              Hi! I'm Rojus Lape - an aspiring software developer currently
-              pursuing a degree in Computer Science at the University of
-              Freiburg.
             </p>
-            <h3 className="text-center mt-5 dark:text-white">
-              Read more about me
+            <p className="dark:text-white text-neutral-900"></p>
+            <h3 className="font-extralight text-xl text-center  text-neutral-900 dark:text-neutral-300">
+              Read more{" "}
+              <Link href="/about">
+                <span className="font-normal text-white">about me</span>
+              </Link>{" "}
+              or my{" "}
+              <Link href="/projects">
+                <span className="font-normal text-white">projects</span>
+              </Link>
             </h3>
           </div>
           <div className="text-4xl flex gap-6 justify-center text-gray-600 dark:text-white">
             <AiFillGithub />
             <AiFillLinkedin />
             <AiFillTwitterCircle />
-          </div>
-          <div className="relative rounded-full w-60 h-60 mt-10 mx-auto md:h-80 md:w-80 mb-12">
-            <Image src={portrait} layout="fill" className="rounded-full" />
           </div>
         </section>
         <div></div>

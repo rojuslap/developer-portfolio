@@ -12,28 +12,28 @@ function Navbar(props) {
         <ul className="flex items-center">
           <li>
             <Link href="/">
-              <p className="cursor-pointer text-xl mr-5 dark:text-white">
+              <p className="cursor-pointer text-l mr-10 text-neutral-900 dark:text-white">
                 Home
               </p>
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <p className="cursor-pointer text-xl mr-5 dark:text-white">
+            <Link href="/projects">
+              <p className="cursor-pointer text-l mr-10 text-neutral-900 dark:text-white">
                 Projects
               </p>
             </Link>
           </li>
           <li>
-            <Link href="/projects">
-              <p className="cursor-pointer text-xl mr-5 dark:text-white">
+            <Link href="/about">
+              <p className="cursor-pointer text-l mr-10 text-neutral-900 dark:text-white">
                 About
               </p>
             </Link>
           </li>
           <li>
             <AiFillFire
-              className="text-2xl cursor-pointer dark:text-white mr-20 fade-in"
+              className="text-xl cursor-pointer text-neutral-900 dark:text-white mr-32 fade-in"
               onClick={props.doIt}
             />
           </li>
