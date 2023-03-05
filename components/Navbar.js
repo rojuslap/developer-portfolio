@@ -7,7 +7,7 @@ import toggleTheme from "../pages/_app";
 function Navbar(props) {
   return (
     <div className="bg-gray-50 dark:bg-neutral-900">
-      <div className="py-10 flex justify-between">
+      <div className="py-10 flex md:justify-between justify-center">
         <h1></h1>
         <ul className="flex items-center">
           <li>
@@ -33,7 +33,7 @@ function Navbar(props) {
           </li>
           <li>
             <AiFillFire
-              className="text-xl cursor-pointer text-neutral-900 dark:text-white mr-32 fade-in"
+              className="text-xl cursor-pointer text-neutral-900 dark:text-white md:mr-32 fade-in"
               onClick={props.doIt}
             />
           </li>

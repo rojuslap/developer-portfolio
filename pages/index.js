@@ -28,11 +28,15 @@ export default function Home() {
             <h3 className="font-extralight text-xl text-center  text-neutral-900 dark:text-neutral-300">
               Read more{" "}
               <Link href="/about">
-                <span className="font-normal text-white">about me</span>
+                <span className="font-normal dark:text-white text-black">
+                  about me
+                </span>
               </Link>{" "}
               or my{" "}
               <Link href="/projects">
-                <span className="font-normal text-white">projects</span>
+                <span className="font-normal dark:text-white text-black">
+                  projects
+                </span>
               </Link>
             </h3>
           </div>
