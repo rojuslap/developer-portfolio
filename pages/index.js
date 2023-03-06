@@ -41,8 +41,15 @@ export default function Home() {
             </h3>
           </div>
           <div className="text-4xl flex gap-6 justify-center text-gray-600 dark:text-white">
-            <AiFillGithub />
-            <AiFillLinkedin />
+            <a href="https://github.com/rojuslap" target="_blank">
+              <AiFillGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rojus-lapinskas-24b91b23b"
+              target="_blank"
+            >
+              <AiFillLinkedin />
+            </a>
             <AiFillTwitterCircle />
           </div>
         </section>
