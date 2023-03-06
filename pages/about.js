@@ -4,7 +4,7 @@ import portrait from "../public/portrait.jpg";
 
 function about() {
   return (
-    <main className="dark:bg-neutral-900 bg-neutral-50">
+    <main className="dark:bg-neutral-900 bg-neutral-50 snap-none">
       <div className="fade-in text-center p-3 dark:text-white text-neutral-900 overflow-auto">
         <h1 className="xl:text-5xl font-semibold text-4xl mb-8">About</h1>
         <div className="">
