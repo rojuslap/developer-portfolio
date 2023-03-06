@@ -19,7 +19,7 @@ function about() {
               </p>
             </div>
           </div>
-          <div className="dark:text-neutral-400 xl:overflow-hidden text-left mt-10 sm:px-16  md:px-20 xl:px-16 mx-12 xl:-mx-10">
+          <div className="dark:text-neutral-400 xl:overflow-hidden text-left mt-10 sm:px-16  md:px-20 xl:px-16 mx-4 xl:-mx-10">
             <p className="xl:w-8/12 flex">
               A Computer Science student studying at the University of Freiburg
               in Germany. Committed to learning about new technologies and
