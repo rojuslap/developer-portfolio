@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { AiFillFire } from "react-icons/ai";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+import darkMode from "../pages/_app";
 
 function Navbar(props) {
   return (
-    <div className="bg-gray-50 dark:bg-neutral-900">
+    <div className="bg-gray-50 dark:bg-neutral-900 relative">
       <div className="py-10 flex md:justify-between justify-center">
         <h1></h1>
         <ul className="flex items-center">
@@ -30,10 +31,18 @@ function Navbar(props) {
             </Link>
           </li>
           <li>
-            <AiFillFire
-              className="text-xl cursor-pointer text-neutral-900 dark:text-white md:mr-32 fade-in"
-              onClick={props.doIt}
-            />
+            {" "}
+            {props.change === "light" ? (
+              <MdDarkMode
+                className="text-xl cursor-pointer text-neutral-900 dark:text-white md:mr-32 fade-in"
+                onClick={props.doIt}
+              />
+            ) : (
+              <MdLightMode
+                className="text-xl cursor-pointer text-neutral-900 dark:text-white md:mr-32 fade-in"
+                onClick={props.doIt}
+              />
+            )}
           </li>
         </ul>
       </div>

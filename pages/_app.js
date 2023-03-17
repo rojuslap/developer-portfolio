@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       <div className={darkMode}>
-        <div className="h-screen dark:bg-neutral-900 bg-gray-50 overflow-y-scroll">
-          <Navbar doIt={toggleTheme} />
+        <div className="h-[100vh] dark:bg-neutral-900 bg-gray-50 overflow-auto">
+          <Navbar doIt={toggleTheme} change={darkMode} />
           <Component {...pageProps} />
         </div>
       </div>
