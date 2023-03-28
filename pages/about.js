@@ -4,8 +4,8 @@ import portrait from "../public/portrait.jpg";
 
 function about() {
   return (
-    <main className=" snap-none">
-      <div className="fade-in text-center p-3 dark:text-white text-neutral-900 overflow-auto">
+    <main className="min-h-screen overflow-y-scroll -webkit-overflow-scrolling-touch">
+      <div className="fade-in text-center p-3 dark:text-white text-neutral-900">
         <h1 className="xl:text-5xl font-semibold text-4xl mb-8">About</h1>
         <div className="">
           <div className="xl:text-left xl:ml-96 mx-auto xl:block xl:float-left">
