@@ -11,11 +11,18 @@ export default function App({ Component, pageProps }) {
     setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
   };
   useEffect(() => {
+    const width = window.innerWidth >= 600;
     const handleScroll = () => {
       window.scrollTo(0, 0);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (width) {
+      window.addEventListener("scroll", handleScroll);
+    }
+    return () => {
+      if (width) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
   }, []);
   useEffect(() => {
     const width = window.innerWidth >= 600;
