@@ -19,7 +19,7 @@ function about() {
               </p>
             </div>
           </div>
-          <div className="dark:text-neutral-400 xl:overflow-hidden text-left mt-10 sm:px-16  md:px-20 xl:px-16 mx-4 xl:-mx-10">
+          <div className="dark:text-neutral-300 xl:overflow-hidden text-left mt-10 sm:px-16  md:px-20 xl:px-16 mx-4 xl:-mx-10">
             <p className="xl:w-8/12 flex">
               A Computer Science student studying at the University of Freiburg
               in Germany. Committed to learning about new technologies and
@@ -32,9 +32,10 @@ function about() {
               inventore. Aperiam, reprehenderit sint!
             </p>
             <p className="mt-8 xl:w-8/12 xl:flex">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              porro quos repudiandae explicabo, laborum facere odio nam
-              architecto consequuntur corporis neque praesentium dolorum.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perferendis molestias obcaecati eius saepe soluta, architecto eos
+              odit amet quibusdam esse totam animi itaque culpa eligendi harum
+              inventore. Aperiam, reprehenderit sint!
             </p>
             <div className="mt-8 flex justify-center xl:justify-start">
               <a
