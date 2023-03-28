@@ -39,13 +39,15 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-      <div className={darkMode}>
-        <Trail />
-        <div className="h-screen w-screen fixed backdrop-blur-3xl bg-gray-50 dark:bg-neutral-900 overflow-hidden"></div>
-        <div className="h-[100vh] md:overflow-hidden z-50 relative">
-          <div className="h-screen md:backdrop-blur-[100px] z-20">
-            <Navbar doIt={toggleTheme} change={darkMode} />
-            <Component {...pageProps} />
+      <div className="overflow-y-scroll -webkit-overflow-scrolling-touch">
+        <div className={darkMode}>
+          <Trail />
+          <div className="h-screen w-screen fixed backdrop-blur-3xl bg-gray-50 dark:bg-neutral-900 overflow-hidden"></div>
+          <div className="h-[100vh] md:overflow-hidden z-50 relative">
+            <div className="h-screen md:backdrop-blur-[100px] z-20">
+              <Navbar doIt={toggleTheme} change={darkMode} />
+              <Component {...pageProps} />
+            </div>
           </div>
         </div>
       </div>
