@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -267,12 +267,18 @@
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
-
+.rotate {
+  -webkit-animation: rotate 20s normal linear infinite;
+  animation: rotate 20s normal linear infinite;
+}
 @keyframes rotate {
   from {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    scale: 1 1.5;
   }
   to {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
