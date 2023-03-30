@@ -42,7 +42,7 @@ function Trail() {
   }, [x, y]);
 
   return (
-    <div className="relative">
+    <div className="absolute">
       <div
         ref={pointerRef}
         className={`invisible md:visible pointer-events-none ${styles.rotate} rounded-full w-[20vw]  aspect-square absolute z-10 left-1/2 top-1/2 bg-gradient-to-r dark:from-neutral-300 from-neutral-500 dark:to-neutral-400  `}
